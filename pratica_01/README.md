@@ -18,17 +18,24 @@ Clone este repositório para sua máquina local:
 ```bash
 git clone https://github.com/yelken/workshop-containers-tre-sp-dia-1.git
 cd workshop-containers-tre-sp-dia-1
+```
 
 ### 2. Build da imagem
 
+```bash
 docker build -t tre-sp/python-flask-app .
+```
 
 ### 3. Executar o container (Opcional)
 
+```bash
 docker run -p 5000:5000 tre-sp/python-flask-app
+```
 
 ### 4. Subir imagem em um registry
 
+```bash
 docker login
 docker tag tre-sp/python-flask-app <seu-usuario>/python-flask-app:1.0
 docker push <seu-usuario>/python-flask-app:1.0
+```
